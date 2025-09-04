@@ -19,42 +19,11 @@
             line-height: 1.6;
         }
 
-        /* Assam Government Banner */
-        .gov-banner {
-            background-color: #002147;
-            color: white;
-            padding: 8px 15px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            border-bottom: 3px solid #ffcc00;
-        }
-
-        .gov-banner .left {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .gov-banner img {
-            height: 45px;
-        }
-
-        .gov-banner .title {
-            font-size: 16px;
-            font-weight: bold;
-            line-height: 1.2;
-        }
-
-        .gov-banner .right img {
-            height: 45px;
-        }
-
-        /* Main Header */
+        /* Header */
         header {
             background: linear-gradient(135deg, #0d47a1, #1565c0);
             color: white;
-            padding: 15px 20px;
+            padding: 18px 20px;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -243,24 +212,16 @@
 
         /* Mobile Friendly */
         @media screen and (max-width: 600px) {
-            .gov-banner {
-                flex-direction: column;
-                text-align: center;
-            }
-
             .logo h1 {
                 font-size: 16px;
             }
-
             .logo img {
                 height: 60px;
                 width: 60px;
             }
-
             nav ul {
                 gap: 10px;
             }
-
             .shg-card {
                 width: 100%;
             }
@@ -268,17 +229,6 @@
     </style>
 </head>
 <body>
-
-    <!-- Assam Government Banner -->
-    <div class="gov-banner">
-        <div class="left">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Emblem_of_Assam.svg/1200px-Emblem_of_Assam.svg.png" alt="Assam Govt Logo">
-            <div class="title">Government of Assam<br><small>Assam State Rural Livelihood Mission</small></div>
-        </div>
-        <div class="right">
-            <img src="https://asrlm.assam.gov.in/sites/default/files/inline-images/asrlm_logo.png" alt="ASRLM Logo">
-        </div>
-    </div>
 
     <!-- Header -->
     <header>
