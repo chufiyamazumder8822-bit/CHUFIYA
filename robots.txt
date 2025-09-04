@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://chufiyamazumder8822-bit.github.io/CHUFIYA/sitemap.xml
