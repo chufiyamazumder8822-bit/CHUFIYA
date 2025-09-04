@@ -3,18 +3,33 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Official website of Chufiya Begum Mazumder, Jeevika Sakhi under ASRLM, Assam Government. Empowering women through Self Help Groups (SHGs) and digital literacy." />
-    <meta name="keywords" content="Chufiya Begum Mazumder, Jeevika Sakhi, ASRLM, Assam Government, Self Help Groups, SHG, Digital Empowerment, Women Empowerment, Assam Rural Livelihood" />
-    <meta name="author" content="Chufiya Begum Mazumder" />
-    <meta name="robots" content="index, follow" />
 
-    <!-- Google Verification Meta Tag -->
+    <title>Chufiya Begum Mazumder | Jeevika Sakhi | ASRLM | Assam Government</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="title" content="Chufiya Begum Mazumder | Jeevika Sakhi | ASRLM | Assam Government">
+    <meta name="description" content="Official portfolio of Chufiya Begum Mazumder, Jeevika Sakhi under ASRLM, Assam Government. Empowering Self Help Groups (SHGs), promoting women empowerment, digital literacy, and rural development in Assam.">
+    <meta name="keywords" content="Chufiya Begum Mazumder, Jeevika Sakhi, ASRLM, Assam Government, SHG, Self Help Groups, Women Empowerment, Digital Literacy, Assam Rural Livelihood, Silchar">
+    <meta name="author" content="Chufiya Begum Mazumder">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+
+    <!-- Google Search Console Verification -->
     <meta name="google-site-verification" content="PASTE_YOUR_CODE_HERE" />
 
-    <title>Chufiya Begum Mazumder | Jeevika Sakhi | ASRLM</title>
+    <!-- Open Graph / Facebook / WhatsApp -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://chufiyamazumder8822-bit.github.io/CHUFIYA/">
+    <meta property="og:title" content="Chufiya Begum Mazumder | Jeevika Sakhi | ASRLM | Assam Government">
+    <meta property="og:description" content="Empowering Self Help Groups (SHGs), Digital Literacy, and Women Empowerment under Assam State Rural Livelihood Mission (ASRLM).">
+    <meta property="og:image" content="profile.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://upload.wikimedia.org/wikipedia/commons/4/4e/Emblem_of_Assam.svg">
 
     <style>
-        /* Reset and Base Styles */
+        /* Reset & Base Styles */
         * {
             margin: 0;
             padding: 0;
@@ -28,180 +43,322 @@
             line-height: 1.6;
         }
 
-        header {
-            background: #003366;
+        /* Assam Government Banner */
+        .gov-banner {
+            background-color: #002147;
             color: white;
-            padding: 15px;
-            text-align: center;
-            border-bottom: 4px solid #ffcc00;
-        }
-
-        header h1 {
-            font-size: 22px;
-            margin-bottom: 5px;
-        }
-
-        header h2 {
-            font-size: 16px;
-            font-weight: normal;
-            opacity: 0.9;
-        }
-
-        section {
-            width: 80%;
-            margin: 20px auto;
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
-        }
-
-        h2 {
-            color: #003366;
-            margin-bottom: 10px;
-            text-align: center;
-        }
-
-        p {
-            margin-bottom: 12px;
-            font-size: 15px;
-        }
-
-        /* SHG Section */
-        #shg {
-            background: #e8f5e9;
-            padding: 20px;
-            border-radius: 8px;
-            margin-top: 15px;
-        }
-
-        .shg-container {
+            padding: 8px 15px;
             display: flex;
-            justify-content: space-around;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 3px solid #ffcc00;
+        }
+
+        .gov-banner .left {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .gov-banner img {
+            height: 45px;
+        }
+
+        .gov-banner .title {
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 1.2;
+        }
+
+        /* Main Header */
+        header {
+            background: linear-gradient(135deg, #0d47a1, #1565c0);
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
             flex-wrap: wrap;
-            gap: 15px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
         }
 
-        .shg-card {
-            background: white;
-            width: 30%;
-            min-width: 250px;
-            padding: 15px;
-            border-radius: 8px;
-            box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo img {
+            height: 75px;
+            width: 75px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid #fff;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .logo h1 {
+            font-size: 20px;
+            font-weight: bold;
+            color: #fff;
+            line-height: 1.3;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            padding: 6px 12px;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        /* Hero Section */
+        .hero {
             text-align: center;
-            transition: transform 0.2s;
+            padding: 55px 20px;
+            background-color: #e3f2fd;
         }
 
-        .shg-card:hover {
-            transform: scale(1.05);
-        }
-
-        .shg-card h3 {
-            color: #222;
+        .hero h2 {
+            font-size: 26px;
+            color: #0d47a1;
             margin-bottom: 8px;
         }
 
-        /* Contact Section */
-        #contact {
-            background: #f1f7ff;
-            padding: 15px;
+        .hero p {
+            font-size: 16px;
+            max-width: 700px;
+            margin: auto;
+            color: #333;
+        }
+
+        /* Section Styling */
+        section {
+            max-width: 950px;
+            margin: 35px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
             text-align: center;
+            color: #1976d2;
+            margin-bottom: 12px;
+            font-size: 24px;
+        }
+
+        section p {
+            font-size: 15px;
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        /* SHG Section */
+        .shg-section {
+            background-color: #e8f5e9;
+            padding: 35px 20px;
+            border-radius: 10px;
+            margin-top: 30px;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        .shg-section h3 {
+            color: #1b5e20;
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .shg-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .shg-card {
+            background: #fff;
+            padding: 18px 15px;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+            border: 1px solid #c8e6c9;
+            min-height: 160px;
+        }
+
+        .shg-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+        }
+
+        .shg-card h4 {
+            color: #0d47a1;
+            margin-bottom: 10px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        /* Contact Section */
+        .contact {
+            margin-top: 30px;
+            padding: 18px;
+            text-align: center;
+            background-color: #f1f8ff;
             border-radius: 8px;
         }
 
-        #contact p {
+        .contact h3 {
+            color: #0d47a1;
+            margin-bottom: 8px;
+        }
+
+        .contact p {
             font-size: 14px;
         }
 
         /* Footer */
         footer {
-            background: #003366;
+            background: #0d47a1;
             color: white;
             text-align: center;
-            padding: 12px;
-            margin-top: 30px;
-            border-top: 3px solid #ffcc00;
+            padding: 12px 10px;
+            margin-top: 25px;
             font-size: 13px;
+            border-top: 3px solid #ffcc00;
+            line-height: 1.6;
         }
 
         footer p {
-            margin: 4px 0;
+            margin: 3px 0;
         }
 
-        footer .disclaimer {
+        .disclaimer {
             font-size: 11px;
-            opacity: 0.8;
+            opacity: 0.85;
+            margin-top: 3px;
         }
 
         /* Mobile Responsive */
-        @media (max-width: 768px) {
-            .shg-container {
-                flex-direction: column;
-                align-items: center;
+        @media screen and (max-width: 600px) {
+            .logo h1 {
+                font-size: 16px;
+            }
+
+            .logo img {
+                height: 60px;
+                width: 60px;
+            }
+
+            nav ul {
+                gap: 10px;
             }
 
             .shg-card {
-                width: 90%;
+                width: 100%;
             }
         }
     </style>
 </head>
 <body>
 
+    <!-- Assam Government Banner -->
+    <div class="gov-banner">
+        <div class="left">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Emblem_of_Assam.svg/1200px-Emblem_of_Assam.svg.png" alt="Assam Govt Logo">
+            <div class="title">Government of Assam<br><small>Assam State Rural Livelihood Mission</small></div>
+        </div>
+        <div class="right">
+            <img src="https://asrlm.assam.gov.in/sites/default/files/inline-images/asrlm_logo.png" alt="ASRLM Logo">
+        </div>
+    </div>
+
     <!-- Header -->
     <header>
-        <h1>Chufiya Begum Mazumder</h1>
-        <h2>Jeevika Sakhi | Assam State Rural Livelihoods Mission (ASRLM)</h2>
+        <div class="logo">
+            <img src="profile.jpg" alt="Chufiya Begum Mazumder">
+            <h1>Chufiya Begum Mazumder<br><small>Jeevika Sakhi | ASRLM | Assam, Silchar</small></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#shg">SHGs</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
+
+    <!-- Hero -->
+    <div class="hero">
+        <h2>Digital Empowerment Project</h2>
+        <p>
+            A Government of Assam initiative under the <b>Assam State Rural Livelihood Mission (ASRLM)</b>,
+            empowering rural communities through Self Help Groups (SHGs).
+        </p>
+    </div>
 
     <!-- About Section -->
     <section id="about">
         <h2>About ASRLM & Jeevika Sakhi</h2>
         <p>
-            The <strong>Assam State Rural Livelihood Mission (ASRLM)</strong> works to reduce poverty and improve livelihoods in rural Assam through the promotion and support of <strong>Self Help Groups (SHGs)</strong>.
-        </p>
-        <p>
-            As a <strong>Jeevika Sakhi</strong>, I act as a bridge between the government and rural communities, helping SHGs adopt digital tools, gain financial literacy, and improve their livelihoods.
+            The <b>Assam State Rural Livelihood Mission (ASRLM)</b> works towards reducing poverty and
+            enhancing livelihoods in rural Assam by promoting and supporting Self Help Groups (SHGs).<br><br>
+            As a <b>Jeevika Sakhi</b>, I act as a bridge between the government and rural communities,
+            helping SHGs adopt digital tools, gain financial literacy, and improve their livelihoods.
         </p>
     </section>
 
     <!-- SHG Section -->
-    <section id="shg">
-        <h2>Self Help Groups (SHGs)</h2>
-        <div class="shg-container">
+    <section id="shg" class="shg-section">
+        <h3>Self Help Groups (SHGs)</h3>
+        <div class="shg-grid">
             <div class="shg-card">
-                <h3>Women Empowerment</h3>
+                <h4>Women Empowerment</h4>
                 <p>Training women in financial management and entrepreneurship.</p>
             </div>
             <div class="shg-card">
-                <h3>Digital Literacy</h3>
+                <h4>Digital Literacy</h4>
                 <p>Helping SHGs adopt technology to improve business opportunities.</p>
             </div>
             <div class="shg-card">
-                <h3>Community Development</h3>
+                <h4>Community Development</h4>
                 <p>Strengthening rural communities through sustainable growth.</p>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Information</h2>
-        <p><strong>Email:</strong> chufiyamazumder8822@gmail.com</p>
-        <p><strong>Location:</strong> Silchar, Assam, India</p>
+    <section id="contact" class="contact">
+        <h3>Contact Information</h3>
+        <p><b>Email:</b> chufiyamazumder8822@gmail.com</p>
+        <p><b>Location:</b> Silchar, Assam, India</p>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p><strong>Government of Assam | ASRLM Verified</strong></p>
+        <p><b>Government of Assam | ASRLM Verified</b></p>
         <p>Chufiya Begum Mazumder | Jeevika Sakhi | Silchar, Assam</p>
         <p>&copy; 2025 Assam State Rural Livelihood Mission | All Rights Reserved</p>
-        <p class="disclaimer">
-            This is a personal informational website and not an official Assam Government portal.
-        </p>
+        <p class="disclaimer">This is a personal informational website and not an official Assam Government portal.</p>
     </footer>
 
 </body>
 </html>
+
 
