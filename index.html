@@ -119,39 +119,55 @@
         /* SHG Section */
         .shg-section {
             background-color: #e8f5e9;
-            padding: 20px;
-            border-radius: 8px;
-            margin-top: 20px;
+            padding: 35px 20px;
+            border-radius: 10px;
+            margin-top: 30px;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
         }
 
         .shg-section h3 {
             color: #1b5e20;
             text-align: center;
-            margin-bottom: 15px;
-            font-size: 20px;
+            margin-bottom: 25px;
+            font-size: 24px;
+            font-weight: bold;
         }
 
-        .shg-list {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 15px;
+        .shg-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+            max-width: 900px;
+            margin: 0 auto;
         }
 
         .shg-card {
             background: #fff;
-            padding: 14px;
-            border: 1px solid #c8e6c9;
-            width: 240px;
-            border-radius: 6px;
+            padding: 18px 15px;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
             text-align: center;
-            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
-            transition: transform 0.3s ease;
+            border: 1px solid #c8e6c9;
+            min-height: 160px;
         }
 
         .shg-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            transform: translateY(-6px);
+            box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+        }
+
+        .shg-card h4 {
+            color: #0d47a1;
+            margin-bottom: 10px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .shg-card p {
+            font-size: 14px;
+            color: #333;
+            line-height: 1.6;
         }
 
         /* Contact */
@@ -252,7 +268,7 @@
     <!-- SHG Section -->
     <section id="shg" class="shg-section">
         <h3>Self Help Groups (SHGs)</h3>
-        <div class="shg-list">
+        <div class="shg-grid">
             <div class="shg-card">
                 <h4>Women Empowerment</h4>
                 <p>Training women in financial management and entrepreneurship.</p>
