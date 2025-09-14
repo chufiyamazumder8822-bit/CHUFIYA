@@ -1,4 +1,10 @@
 User-agent: *
 Allow: /
 
+# Disallow sensitive or unnecessary files
+Disallow: /README.md
+Disallow: /google*.html
+
+# Sitemap location
 Sitemap: https://chufiyamazumder8822-bit.github.io/CHUFIYA/sitemap.xml
+
